@@ -1,0 +1,270 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#sec-depoimentos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  width: 100vw;
+  height: auto;
+  overflow-x: hidden;
+}
+
+#boxshadowesquerda {
+  position: absolute;
+  background-image: linear-gradient(to right, #000000 20%, #00000000 90%);
+  top: 0;
+  left: 0;
+  width: 20%;
+  height: 100%;
+  z-index: 1;
+}
+
+#boxshadowdireita {
+  position: absolute;
+  background-image: linear-gradient(to left, #000000 20%, #00000000 90%);
+  top: 0;
+  right: 0;
+  width: 20%;
+  height: 100%;
+  z-index: 1;
+}
+
+#depoimentos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+#depoimentos p {
+  font-size: 0.6rem;
+}
+
+#depoimentos h2 {
+  color: #fff;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  margin-top: 1rem;
+  z-index: 3;
+}
+
+#depoimentos h2 span {
+  color: #c72929;
+}
+
+#carrossel-depoimentos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1000%;
+  height: 14rem;
+  margin-left: 0.4rem;
+  margin-top: 4rem;
+}
+
+.depoimento {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 22rem;
+  height: 100%;
+  margin: 0.5rem;
+  padding: 1rem;
+  background-color: #1d1d1e;
+  border: #fff 1px solid;
+  border-radius: 20px;
+  transform: translateX(0);
+  animation: move-para-direita 400s linear infinite;
+  gap: 2rem;
+}
+
+#carrossel-depoimentos-reverso {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1000%;
+  height: 14rem;
+  margin-left: 0.4rem;
+  margin-top: 2rem;
+}
+
+.depoimento-reverso {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 22rem;
+  margin: 0.5rem;
+  padding: 1rem;
+  background-color: #1d1d1e;
+  border: #fff 1px solid;
+  border-radius: 20px;
+  transform: translateX(0);
+  animation: move-para-esquerda 300s linear infinite;
+  gap: 1rem;
+}
+
+#carrossel-depoimentos:hover .depoimento {
+  animation-play-state: paused;
+}
+
+#carrossel-depoimentos-reverso:hover .depoimento-reverso {
+  animation-play-state: paused;
+}
+
+.text {
+  line-height: 1.9rem;
+  font-size: 0.85rem;
+}
+
+#maior {
+  height: 100%;
+}
+
+#menor {
+  height: 90%;
+}
+
+.nome-data {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 0.5rem;
+}
+
+#nome-casais {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+#data {
+  font-size: 0.8rem;
+  font-weight: 300;
+}
+
+@keyframes move-para-direita {
+  0% {
+    transform: translateX(810%);
+  }
+
+  50% {
+    transform: translateX(-810%);
+  }
+
+  100% {
+    transform: translateX(810%);
+  }
+}
+
+@keyframes move-para-cima {
+  0% {
+    transform: translateY(810%);
+  }
+
+  50% {
+    transform: translateY(-810%);
+  }
+
+  100% {
+    transform: translateY(810%);
+  }
+}
+
+@keyframes move-para-esquerda {
+  0% {
+    transform: translateX(-810%);
+  }
+
+  50% {
+    transform: translateX(810%);
+  }
+
+  100% {
+    transform: translateX(-810%);
+  }
+}
+
+@media (max-width: 900px) {
+  #sec-depoimentos {
+    height: auto;
+  }
+
+  #boxshadowesquerda {
+    display: none;
+  }
+  #boxshadowdireita {
+    display: none;
+  }
+
+  #depoimentos h2 {
+    font-size: 1.2rem;
+    width: 60%;
+    text-align: center;
+  }
+
+  #carrossel-depoimentos-reverso {
+    display: none;
+  }
+
+  #carrossel-depoimentos {
+    height: 15rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .depoimento {
+    height: 100%;
+    margin: 0.5rem;
+    padding: 1rem;
+    background-color: #1d1d1e;
+    border: #fff 1px solid;
+    border-radius: 20px;
+    transform: translateX(0);
+    animation: move-para-direita 300s linear infinite;
+    gap: 1rem;
+  }
+
+  .text {
+    line-height: 1.5rem;
+    font-size: 0.8rem;
+    text-align: start;
+    width: 100%;
+  }
+
+  #maior {
+    height: 100%;
+  }
+
+  #menor {
+    height: 90%;
+  }
+
+  .nome-data {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 0.5rem;
+  }
+
+  #nome-casais {
+    font-size: 1rem;
+    font-weight: 600;
+  }
+
+  #data {
+    font-size: 0.8rem;
+    font-weight: 300;
+  }
+}
+
+@media (max-width: 500px) {
+  .depoimento {
+    min-width: 280px;
+  }
+}
