@@ -13,7 +13,6 @@
   width: 100%;
   margin-bottom: 8rem;
   padding: 0.8rem;
-  overflow: hidden;
 }
 
 #como-criar {
@@ -34,12 +33,14 @@
 
 #text-criar h3 {
   font-size: 2.5rem;
+  font-weight: 700;
 }
 
 #text-criar p {
   font-size: 1.2rem;
   margin-top: 0.5rem;
   color: #c9c9c9;
+  font-weight: 00;
 }
 
 #instrucoes {
@@ -59,13 +60,13 @@
   justify-content: center;
   flex-direction: column;
   padding: 1rem;
-  max-width: 28rem;
+  max-width: 20rem;
   width: 22%;
-  height: 14rem;
+  height: 16rem;
   border: #c9c9c93d 0px solid;
   background-image: linear-gradient(1800deg, #181818 0%, transparent);
   border-radius: 12px;
-  gap: 1.5rem;
+  gap: rem;
   transition: all 0.3s;
 }
 
@@ -75,7 +76,7 @@
   align-items: start;
   width: 100%;
   height: auto;
-  margin-bottom: rem;
+  margin-bottom: 2rem;
 }
 
 .selecao-red img {
@@ -93,6 +94,7 @@
 .box-instrucoes p {
   font-size: 1.2rem;
   font-weight: 500;
+  margin-bottom: 0.5rem;
 }
 
 .box-instrucoes span {
@@ -124,12 +126,14 @@
 
 @media (max-width: 768px) {
   #text-criar h3 {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
 
   #text-criar p {
-    font-size: 0.95rem;
+    font-size: 0.9rem;
     margin-top: 0.5rem;
     color: #c9c9c9;
+    width: 90%;
+    text-align: center;
   }
 }
