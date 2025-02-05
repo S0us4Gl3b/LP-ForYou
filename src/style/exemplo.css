@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+#sec-exemplos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  height: auto;
+  font-family: "Roboto", sans-serif;
+}
+
+#text-exemplos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  gap: 1rem;
+}
+
+#text-exemplos h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+#text-exemplos p {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #c9c9c9;
+  text-align: center;
+  width: 85%;
+}
+
+.exemplos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.exemplo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+}
+
+.video-container {
+  width: 18rem;
+  height: 26rem;
+  overflow: hidden;
+  border-radius: 15px;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  position: relative;
+  /*clip-path: inset(10% 0 10% 0);*/
+}
+
+.video-container video {
+  width: 100%;
+  height: auto;
+  position: relative;
+  top: -10%;
+}
+
+#qrCode-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  width: 100%;
+  height: 10rem;
+  margin-bottom: 5rem;
+  padding-left: 4rem;
+  gap: 1.2rem;
+}
+
+.qrCode {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  width: 50%;
+  height: 8rem;
+}
+
+.seta {
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  width: 50%;
+  height: 8rem;
+  padding-top: 0.4rem;
+}
+
+.qrCode img {
+  width: 8rem;
+  height: auto;
+  border-radius: 8px;
+}

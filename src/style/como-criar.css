@@ -11,7 +11,7 @@
   align-items: center;
   justify-content: center;
   width: 100%;
-  margin-bottom: 8rem;
+  margin-bottom: 6rem;
   padding: 0.8rem;
 }
 
@@ -29,6 +29,7 @@
   justify-content: center;
   flex-direction: column;
   margin-bottom: 2rem;
+  max-width: 90%;
 }
 
 #text-criar h3 {
@@ -103,30 +104,38 @@
 }
 
 @media (max-width: 1200px) {
-  #instrucoes {
-    height: auto;
-  }
-
   .box-instrucoes {
     width: calc(45% - 2rem);
     height: 17rem;
   }
+
+  .box-instrucoes p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .box-instrucoes span {
+    font-size: 0.8rem;
+  }
+
+  #instrucoes {
+    height: auto;
+  }
 }
 
 @media (max-width: 768px) {
+  .box-instrucoes {
+    max-width: 18rem;
+    width: calc(80% - 2rem);
+    height: 15rem;
+  }
+
   #instrucoes {
     height: auto;
   }
 
-  .box-instrucoes {
-    width: calc(75% - 2rem);
-    height: 15rem;
-  }
-}
-
-@media (max-width: 768px) {
   #text-criar h3 {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
   }
 
   #text-criar p {
